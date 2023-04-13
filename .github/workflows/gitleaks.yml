@@ -2,6 +2,8 @@ name: secrets leak check
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
     
 jobs:
   scan:
